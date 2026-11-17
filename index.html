@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alessio Sampieri | Senior AI Researcher</title>
+  <meta name="description" content="Alessio Sampieri — Senior AI Researcher at Translated. PhD in Data Science (Sapienza). Human motion modelling, generative models, LLM evaluation.">
+  <meta property="og:title" content="Alessio Sampieri | Senior AI Researcher">
+  <meta property="og:description" content="Senior AI Researcher at Translated. PhD in Data Science, Sapienza University of Rome.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <!-- ===== Top bar ===== -->
+  <div class="topbar">
+    <span>Based in Rome, IT</span>
+    <nav class="links">
+      <!-- TODO: put your CV in assets/cv.pdf -->
+      <a href="assets/cv.pdf">CV</a>
+      <!-- TODO: replace with your Google Scholar URL -->
+      <a href="https://scholar.google.com/citations?user=YOUR_ID">Scholar</a>
+      <a href="https://github.com/AlessioSam">GitHub</a>
+      <a href="https://www.linkedin.com/in/alessio-sampieri/">LinkedIn</a>
+      <!-- TODO: replace with the email you want public -->
+      <a href="mailto:you@example.com">Email</a>
+    </nav>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div>
+      <h1>Alessio Sampieri</h1>
+      <div class="role">Senior AI Researcher at <a href="https://translated.com">Translated</a></div>
+    </div>
+    <!-- Put a square photo at assets/me.jpg; initials are shown until then -->
+    <img class="avatar" src="assets/me.jpg" alt="Alessio Sampieri"
+         onerror="this.outerHTML='<div class=&quot;avatar&quot;>AS</div>'">
+  </header>
+
+  <!-- ===== Bio ===== -->
+  <section id="about">
+    <h2>Biography</h2>
+    <p>
+      I am a <strong>Senior AI Researcher</strong> at <a href="https://translated.com">Translated</a> in Rome.
+      I received my <strong>PhD in Data Science</strong> from <a href="https://www.uniroma1.it">Sapienza University of Rome</a>,
+      where I worked with Fabio Galasso in the PINlab
+      on <strong>modelling humans</strong>: forecasting how people move, synthesising realistic motion, and
+      understanding how humans interact with robots, scenes and each other.
+    </p>
+    <p>
+      My work spans <strong>human motion forecasting</strong> and <strong>generation</strong>,
+      <strong>human–robot collaboration</strong>, <strong>machine unlearning</strong>,
+      and the <strong>evaluation of large language models</strong> on long-context code and time series.
+      It has appeared at ICCV, ECCV, ICLR, AAAI, ACL, BMVC and WACV — see <a href="#research">research</a>.
+    </p>
+  </section>
+
+  <!-- ===== News ===== -->
+  <section id="news">
+    <h2>Latest</h2>
+    <ul class="news">
+      <!-- TODO: set the month you joined -->
+      <li><span class="date">2026</span><span>Joined <a href="https://translated.com">Translated</a> as Senior AI Researcher.</span></li>
+      <li><span class="date">2026</span><span><a href="https://aclanthology.org/2026.findings-acl.1722/">CaTS-Bench</a> accepted to <strong>Findings of ACL 2026</strong>.</span></li>
+      <li><span class="date">2026</span><span><a href="https://doi.org/10.1609/aaai.v40i5.37351">Human Motion Unlearning</a> accepted to <strong>AAAI 2026</strong>.</span></li>
+      <li><span class="date">2025</span><span>Defended my PhD thesis <em>“On Modelling Humans: Forecasting, Synthesis and Human-X Interaction”</em>.</span></li>
+      <li><span class="date">2025</span><span><a href="https://openreview.net/forum?id=M8OGl34Pmg">Following the Human Thread in Social Navigation</a> accepted to <strong>ICLR 2025</strong>.</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== Timeline ===== -->
+  <section id="timeline">
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li>
+        <span class="date">2026 – now</span>
+        <div>
+          <div class="what">Senior AI Researcher</div>
+          <div class="where">Translated, Rome</div>
+          <div class="desc"><!-- TODO: one line on what you work on --></div>
+        </div>
+      </li>
+      <li>
+        <span class="date">2021 – 2025</span>
+        <div>
+          <div class="what">PhD in Data Science (XXXVII cycle)</div>
+          <div class="where">Sapienza University of Rome · advisor: Fabio Galasso</div>
+          <div class="desc">Thesis: <a href="https://phd.uniroma1.it/web/ALESSIO-SAMPIERI_nT1765522_EN.aspx">On Modelling Humans: Forecasting, Synthesis and Human-X Interaction</a>.</div>
+        </div>
+      </li>
+      <!-- TODO: check years / degree -->
+      <li>
+        <span class="date">– 2020</span>
+        <div>
+          <div class="what">M.Sc. in Data Science</div>
+          <div class="where">Sapienza University of Rome</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== Research ===== -->
+  <section id="research">
+    <div class="pub-head">
+      <h2>Research</h2>
+      <div class="toggle" role="group" aria-label="Filter publications">
+        <button id="btn-sel" class="on">Selected</button>
+        <button id="btn-all">All</button>
+      </div>
+    </div>
+
+    <!-- To add a paper: copy a <div class="pub">. Add data-selected to show it under "Selected". -->
+
+    <div class="year">2026</div>
+
+    <div class="pub" data-selected>
+      <h3>CaTS-Bench: Can Language Models Describe Time Series?</h3>
+      <div class="authors">L. Zhou, P. Yashwante, M. Fisher, <span class="me">A. Sampieri</span>, Z. Zhou, F. Galasso, R. Yu</div>
+      <div class="meta"><span class="venue">Findings of ACL 2026</span><span class="tag">LLM evaluation</span><span class="tag">time series</span>
+        <a href="https://aclanthology.org/2026.findings-acl.1722/">paper</a><a href="https://arxiv.org/abs/2509.20823">arXiv</a></div>
+    </div>
+
+    <div class="pub" data-selected>
+      <h3>Human Motion Unlearning</h3>
+      <div class="authors">E. De Matteis, M. Migliarini, <span class="me">A. Sampieri</span>, I. Spinelli, F. Galasso</div>
+      <div class="meta"><span class="venue">AAAI 2026</span><span class="tag">unlearning</span><span class="tag">motion generation</span>
+        <a href="https://doi.org/10.1609/aaai.v40i5.37351">paper</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>Robotic Policy Adaptation via Weight-Space Meta-Learning</h3>
+      <div class="authors">C. Bianchi, S. Yousefi, <span class="me">A. Sampieri</span>, A. Roberti, L. Rigazio, F. Galasso, L. Franco</div>
+      <div class="meta"><span class="venue">arXiv 2026</span><span class="tag">robotics</span><span class="tag">meta-learning</span>
+        <a href="https://arxiv.org/abs/2606.07217">arXiv</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>Not All Latent Spaces Are Flat: Hyperbolic Concept Control</h3>
+      <div class="authors">M. R. Briglia, S. Facchiano, P. Cursi, <span class="me">A. Sampieri</span>, E. Rodolà, G. M. D'Amely di Melendugno, L. Franco, F. Galasso, I. Masi</div>
+      <div class="meta"><span class="venue">arXiv 2026</span><span class="tag">generative models</span><span class="tag">hyperbolic</span>
+        <a href="https://arxiv.org/abs/2603.14093">arXiv</a></div>
+    </div>
+
+    <div class="year">2025</div>
+
+    <div class="pub" data-selected>
+      <h3>Following the Human Thread in Social Navigation</h3>
+      <div class="authors">L. Scofano, <span class="me">A. Sampieri</span>, T. Campari, V. Sacco, I. Spinelli, L. Ballan, F. Galasso</div>
+      <div class="meta"><span class="venue">ICLR 2025</span><span class="badge">Spotlight</span><span class="tag">embodied AI</span><span class="tag">robotics</span>
+        <a href="https://openreview.net/forum?id=M8OGl34Pmg">paper</a></div>
+    </div>
+
+    <div class="pub" data-selected>
+      <h3>LongCodeBench: Evaluating Coding LLMs at 1M Context Windows</h3>
+      <div class="authors">S. Rando, L. Romani, <span class="me">A. Sampieri</span>, Y. Kyuragi, L. Franco, F. Galasso, T. Hashimoto, J. Yang</div>
+      <div class="meta"><span class="venue">arXiv 2025</span><span class="tag">LLM evaluation</span><span class="tag">long context</span>
+        <a href="https://arxiv.org/abs/2505.07897">arXiv</a></div>
+    </div>
+
+    <div class="pub" data-selected>
+      <h3>Social EgoMesh Estimation</h3>
+      <div class="authors">L. Scofano, <span class="me">A. Sampieri</span>, E. De Matteis, I. Spinelli, F. Galasso</div>
+      <div class="meta"><span class="venue">WACV 2025</span><span class="tag">egocentric vision</span><span class="tag">pose estimation</span>
+        <a href="https://doi.org/10.1109/WACV61041.2025.00580">paper</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>Video Unlearning via Low-Rank Refusal Vector</h3>
+      <div class="authors">S. Facchiano, S. Saravalle, M. Migliarini, E. De Matteis, <span class="me">A. Sampieri</span>, A. Pilzer, E. Rodolà, I. Spinelli, L. Franco, F. Galasso</div>
+      <div class="meta"><span class="venue">arXiv 2025</span><span class="tag">unlearning</span><span class="tag">video generation</span>
+        <a href="https://arxiv.org/abs/2506.07891">arXiv</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>On Modelling Humans: Forecasting, Synthesis and Human-X Interaction</h3>
+      <div class="authors"><span class="me">A. Sampieri</span></div>
+      <div class="meta"><span class="venue">PhD Thesis, Sapienza 2025</span><span class="tag">thesis</span>
+        <a href="https://phd.uniroma1.it/web/ALESSIO-SAMPIERI_nT1765522_EN.aspx">page</a></div>
+    </div>
+
+    <div class="year">2024</div>
+
+    <div class="pub" data-selected>
+      <h3>Length-Aware Motion Synthesis via Latent Diffusion</h3>
+      <div class="authors"><span class="me">A. Sampieri</span>, A. Palma, I. Spinelli, F. Galasso</div>
+      <div class="meta"><span class="venue">ECCV 2024</span><span class="tag">text-to-motion</span><span class="tag">diffusion</span>
+        <a href="https://doi.org/10.1007/978-3-031-73668-1_7">paper</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>Contracting Skeletal Kinematics for Human-Related Video Anomaly Detection</h3>
+      <div class="authors">A. Flaborea, G. M. D'Amely di Melendugno, S. D'Arrigo, M. A. Sterpa, <span class="me">A. Sampieri</span>, F. Galasso</div>
+      <div class="meta"><span class="venue">Pattern Recognition 2024</span><span class="tag">anomaly detection</span>
+        <a href="https://doi.org/10.1016/j.patcog.2024.110817">paper</a><a href="https://arxiv.org/abs/2301.09489">arXiv</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>About Latent Roles in Forecasting Players in Team Sports</h3>
+      <div class="authors">L. Scofano, <span class="me">A. Sampieri</span>, G. Re, M. Almanza, A. Panconesi, F. Galasso</div>
+      <div class="meta"><span class="venue">Neural Processing Letters 2024</span><span class="tag">trajectory forecasting</span>
+        <a href="https://doi.org/10.1007/s11063-024-11532-0">paper</a></div>
+    </div>
+
+    <div class="year">2023</div>
+
+    <div class="pub" data-selected>
+      <h3>Staged Contact-Aware Global Human Motion Forecasting</h3>
+      <div class="authors">L. Scofano, <span class="me">A. Sampieri</span>, E. Schiele, E. De Matteis, L. Leal-Taixé, F. Galasso</div>
+      <div class="meta"><span class="venue">BMVC 2023</span><span class="tag">motion forecasting</span><span class="tag">scene-aware</span>
+        <a href="http://proceedings.bmvc2023.org/589/">paper</a><a href="https://arxiv.org/abs/2309.08947">arXiv</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>Best Practices for 2-Body Pose Forecasting</h3>
+      <div class="authors">M. R. Ur Rahman, L. Scofano, E. De Matteis, A. Flaborea, <span class="me">A. Sampieri</span>, F. Galasso</div>
+      <div class="meta"><span class="venue">CVPR Workshops 2023</span><span class="tag">motion forecasting</span>
+        <a href="https://doi.org/10.1109/CVPRW59228.2023.00369">paper</a></div>
+    </div>
+
+    <div class="year">2022</div>
+
+    <div class="pub" data-selected>
+      <h3>Pose Forecasting in Industrial Human-Robot Collaboration</h3>
+      <div class="authors"><span class="me">A. Sampieri</span>, G. M. D'Amely di Melendugno, A. Avogaro, F. Cunico, F. Setti, G. Skenderi, M. Cristani, F. Galasso</div>
+      <div class="meta"><span class="venue">ECCV 2022</span><span class="tag">human-robot collaboration</span><span class="tag">dataset</span>
+        <a href="https://doi.org/10.1007/978-3-031-19839-7_4">paper</a><a href="https://arxiv.org/abs/2208.07308">arXiv</a><a href="https://github.com/AlessioSam/CHICO-PoseForecasting">code</a></div>
+    </div>
+
+    <div class="year">2021</div>
+
+    <div class="pub" data-selected>
+      <h3>Space-Time-Separable Graph Convolutional Network for Pose Forecasting</h3>
+      <div class="authors">T. Sofianos, <span class="me">A. Sampieri</span>, L. Franco, F. Galasso</div>
+      <div class="meta"><span class="venue">ICCV 2021</span><span class="tag">motion forecasting</span><span class="tag">GCN</span>
+        <a href="https://doi.org/10.1109/ICCV48922.2021.01102">paper</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="y">2026</span> A. Sampieri · Last updated November 2026</footer>
+
+<script>
+  // Selected / All toggle
+  const body = document.body, sel = document.getElementById('btn-sel'), all = document.getElementById('btn-all');
+  function show(selectedOnly) {
+    body.classList.toggle('selected-only', selectedOnly);
+    sel.classList.toggle('on', selectedOnly);
+    all.classList.toggle('on', !selectedOnly);
+  }
+  sel.onclick = () => show(true);
+  all.onclick = () => show(false);
+  // hide year headings with no selected papers in "Selected" view
+  document.querySelectorAll('.year').forEach(y => {
+    let n = y.nextElementSibling, has = false;
+    while (n && !n.classList.contains('year')) { if (n.hasAttribute('data-selected')) has = true; n = n.nextElementSibling; }
+    if (!has) y.classList.add('empty');
+  });
+  show(true);
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
