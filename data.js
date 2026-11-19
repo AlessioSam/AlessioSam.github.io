@@ -108,11 +108,11 @@ window.SITE = {
   // kind: work | edu
   journey: [
     { kind: "work", when: "Jun 2026 — now", role: "Senior AI Researcher", org: "Translated", place: "Rome",
-      text: 'Pre-training multilingual LLMs: data mixtures, training curricula and cross-lingual evaluation, within the <a href="https://dvps.translated.com/">DVPS</a> Horizon Europe project.' },
+      text: 'Pre-training LLMs from scratch in the Foundation Model Team (a team of 6): tokenizers, data mixtures, training curricula, modeling and evaluation. Co-developed <a href="https://huggingface.co/translated/Lara-4-Mini-Base">Lara Mini Base</a>.' },
     { kind: "work", when: "Dec 2024 — Jun 2026", role: "Lead Researcher", org: '<a href="https://italailabs.com">ItalAI</a>', place: "Rome",
-      text: "Research &amp; development of AI pilot projects for industry clients at a Sapienza spin-off building Physical AI for industrial environments: from problem definition and benchmarks to working prototypes." },
+      text: "Research &amp; development of AI pilot projects for industry clients at a Sapienza spin-off building Physical AI for industrial environments: from problem definition and benchmarks to working prototypes. Scientific paper writing and research in robotics and machine unlearning." },
     { kind: "work", when: "Sep — Nov 2024", role: "AI Research Intern", org: "Panasonic North America", place: "Mountain View, CA",
-      text: "Visual dataset understanding and synthesis, in collaboration with BAIR (UC Berkeley) and Stanford." },
+      text: "Computer vision research (visual dataset understanding and synthesis) with BAIR (UC Berkeley), and LLM research with Stanford." },
     { kind: "edu", when: "2021 — 2024", role: "PhD in Data Science", org: "Sapienza University of Rome", place: "Rome",
       text: 'Advisor: Fabio Galasso. Thesis: <a href="https://phd.uniroma1.it/web/ALESSIO-SAMPIERI_nT1765522_EN.aspx"><i>On Modelling Humans: Forecasting, Synthesis and Human-X Interaction</i></a>.' },
     { kind: "work", when: "Jul — Oct 2021", role: "Research Associate", org: "Sapienza, Computer Science Dept.", place: "Rome",
