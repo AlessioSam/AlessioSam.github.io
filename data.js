@@ -101,7 +101,7 @@ window.SITE = {
     { date: "2026", text: "<b>CaTS-Bench</b> accepted to <b>Findings of ACL 2026</b>." },
     { date: "2026", text: "<b>Human Motion Unlearning</b> accepted to <b>AAAI 2026</b>." },
     { date: "2025", text: "<b>Following the Human Thread</b> accepted to <b>ICLR 2025</b> as a Spotlight." },
-    { date: "Dec 2024", text: "Joined ItalAI as Lead Researcher." },
+    { date: "Dec 2024", text: 'Joined <a href="https://italailabs.com">ItalAI</a> as Lead Researcher.' },
     { date: "Sep 2024", text: "Research internship at <b>Panasonic North America</b>, Mountain View (CA)." },
   ],
 
@@ -109,7 +109,8 @@ window.SITE = {
   journey: [
     { kind: "work", when: "Jun 2026 — now", role: "Senior AI Researcher", org: "Translated", place: "Rome",
       text: 'Pre-training multilingual LLMs: data mixtures, training curricula and cross-lingual evaluation, within the <a href="https://dvps.translated.com/">DVPS</a> Horizon Europe project.' },
-    { kind: "work", when: "Dec 2024 — Jun 2026", role: "Lead Researcher", org: "ItalAI", place: "Rome", text: "" },
+    { kind: "work", when: "Dec 2024 — Jun 2026", role: "Lead Researcher", org: '<a href="https://italailabs.com">ItalAI</a>', place: "Rome",
+      text: "Research &amp; development of AI pilot projects for industry clients at a Sapienza spin-off building Physical AI for industrial environments: from problem definition and benchmarks to working prototypes." },
     { kind: "work", when: "Sep — Nov 2024", role: "AI Research Intern", org: "Panasonic North America", place: "Mountain View, CA",
       text: "Visual dataset understanding and synthesis, in collaboration with BAIR (UC Berkeley) and Stanford." },
     { kind: "edu", when: "2021 — 2024", role: "PhD in Data Science", org: "Sapienza University of Rome", place: "Rome",
